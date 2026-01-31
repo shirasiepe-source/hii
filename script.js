@@ -54,12 +54,12 @@ const getRandomNumber = (num) => {return Math.floor(Math.random() * (num + 1));}
       yesButton.style.fontSize = `${fontSize}px`;
   
       //no button text
-      const messages = ["No","Are you sure?","Babyy please?","Don't do this to me :(","Say yes or else...",];
+      const messages = ["no","are you sure?","mark please?","baby? :(","please please please please ",];
   
       if (noClickCount === 4) {
         const newButton = document.createElement("button");
         newButton.id = "runawayButton";
-        newButton.textContent = "Say yes or else...";
+        newButton.textContent = "please please please please ";
         newButton.style.position = "absolute";
         const yesButtonRect = yesButton.getBoundingClientRect();
         newButton.style.top = `${yesButtonRect.bottom + 10}px`;
@@ -90,21 +90,12 @@ const getRandomNumber = (num) => {return Math.floor(Math.random() * (num + 1));}
   
     //yes page
     valentineQuestion.innerHTML = `
-      <img src="./images/image7.gif" alt="Celebration duckie" style="display: block; margin: 0 auto; width: 200px; height: auto;"/>
-      Congratulations!!<br>
+      congratulations!!<br>
       <span style="font-size: 20px; color: #bd1e59;">yayayayayayayayayayay </span>
     `;
     valentineQuestion.style.textAlign = "center"; 
   
-    //make image go boing
-    const bounceImage = document.createElement("img");
-    bounceImage.src = "./images/baddie.jpg";
-    bounceImage.alt = "Baddie";
-    bounceImage.style.position = "absolute";
-    bounceImage.style.width = "300px";
-    bounceImage.style.height = "325px";
-    bounceImage.style.borderRadius = "50%";
-    document.body.appendChild(bounceImage);
+   
   
     startBouncing(bounceImage);
   
@@ -156,3 +147,4 @@ const getRandomNumber = (num) => {return Math.floor(Math.random() * (num + 1));}
   }
 
   
+
